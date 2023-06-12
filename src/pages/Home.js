@@ -8,6 +8,7 @@ import Maslahatlar from '../components/Maslahatlar'
 import ContactForm from '../components/ContactForm'
 import Faq from '../components/Faq'
 import NegaBiz from '../components/NegaBiz'
+import Comments from '../components/Comments'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <OurProducts/>
       <WeInNumbers/>
       <Faq/>
+      <Comments/>
       <Maslahatlar/>
       <ContactForm/>
 
