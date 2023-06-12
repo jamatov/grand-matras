@@ -1,0 +1,528 @@
+/* The following line can be included in a src/App.scss */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+ul{
+  margin: 0 !important;
+}
+
+li{
+  list-style-type: none !important;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+
+.Navbar{
+  padding: 12px 0;
+  background: rgba(255, 255, 255, 0.4);
+  .nav-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-list{
+      display: flex;
+      gap: 32px;
+
+      a{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #25225E;
+      }
+    }
+  }
+}
+
+.Header{
+  background-size: cover;
+  
+  // z-index: 1;
+  height: 581px;
+  
+  
+
+  .row{
+    align-items: center;
+  }
+
+  .header-img{
+    position: relative;
+    // overflow-x: visible;
+    padding-top: 77px;
+    .header-matras{
+      // position: absolute;
+      top: 0;
+      // z-index: 2;
+    }
+
+    .header-rectangle{
+      position: absolute;
+      top: 0;
+
+      left: 110px;
+      z-index: -1;
+    }
+
+  }
+
+  .header-info{
+    h2{
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 75px;
+      text-transform: uppercase;
+      color: #4A44BB;
+      margin-bottom: 24px;
+    }
+
+    p{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 140%;
+      color: #38338C;
+    }
+
+    button{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 24px;
+      gap: 16px;
+      width: 243px;
+      height: 40px;
+      background: #5D55EA;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #FFFFFF;
+      border: none;
+    }
+  }
+
+}
+
+.HeaderIcons{
+  padding: 24px 0;
+  background: #DFDDFB;
+
+  .row{
+    div{
+      padding: 40px 0;
+      text-align: center;
+    }
+  }
+}
+
+.About{
+    padding-top: 150px;
+  background: #fff;
+  .body1{
+    margin-bottom: 100px;
+
+  }
+  .row{
+    align-items: center;
+    img{
+      width: 100%;
+    }
+
+    .body-info{
+      h3{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 140%;
+        color: #38338C;
+        margin-bottom: 16px;
+      }
+
+      p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #25225E;
+      }
+    }
+  }
+}
+
+.OurProducts{
+  margin-bottom: 150px;
+  .pruducts-tittle{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    text-align: center;
+    color: #38338C;
+    margin-bottom: 40px;
+  }
+
+  .card{
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;  
+    // background: rgba(223, 221, 251, 0.5);
+    background: #E6E8E9;
+    margin-bottom: 30px;
+
+    .card-body{
+      img{
+        width: 100%;
+        margin-bottom: 12px;
+      }
+      h3{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 140%;
+        color: #25225E;
+        margin-bottom: 8px;
+      }
+
+      .skidka{
+        text-decoration: line-through ;
+        text-decoration-color: red;
+
+        span{
+          text-decoration: none ;
+        }
+      }
+
+      .d-flex{
+        align-items: center;
+        gap: 10px;
+        span{
+          color: #4A44BB;
+
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 140%;
+        }
+      }
+
+      
+
+      p{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 140%;
+        color: #4A44BB;
+
+        span{
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 140%;
+        }
+      }
+
+      button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 24px;
+        width: 100%;
+        height: 40px;
+        background: #5D55EA;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+      }
+    }
+  }
+}
+
+.NegaBiz{
+  margin-bottom: 140px;
+  padding: 40px 0;
+  background-image: url("./images/we_innumber.png");
+  background-size: cover;
+  h2{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    text-align: center;
+    color: #38338C;
+    margin-bottom: 55px;
+  }
+
+  .card-body{
+    margin-bottom: 55px;
+
+    img{
+      margin-bottom: 10px;
+    }
+
+    h3{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 140%;
+      color: #38338C;
+      margin-bottom: 10px;
+    }
+
+    p{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 140%;
+      color: #38338C;
+    }
+  }
+}
+
+.WeInNumbers{
+  background-image: url("./images/we_innumber.png");
+  background-size: cover;
+  padding: 40px 0;
+  margin-bottom: 150px;
+
+  h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #38338C;
+    margin-bottom: 32px;
+  }
+
+  .numbers-body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    div{
+      h3{
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 94px;
+        color: #38338C;
+        margin-bottom: 0;
+      }
+
+      p{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        color: #38338C;
+      }
+    }
+  }
+}
+
+.Faq{
+  margin-bottom: 140px;
+  .row{
+    align-items: center;
+    .faq-img{
+      img{
+        width: 100%;
+
+      }
+    }
+
+    .faq-acardion{
+      h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        color: #38338C;
+        margin-bottom: 28px;
+      }
+
+      .acardion-icon{
+        color: #7D77EE;
+      }
+
+      .faq-acardion__acardion{
+        // border: 1px solid #7D77EE;
+        // box-shadow: none;
+        box-shadow: rgba(109, 109, 242, 0.25) 0px 6px 12px -2px, rgba(136,133,186) 0px 3px 7px -3px;
+
+        .acardion-tittle{
+            font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          color: #25225E;
+          margin-bottom: 0;
+          padding: 8px 0;
+        }
+
+        .css-o4b71y-MuiAccordionSummary-content{
+          margin: 8px 0;
+
+        }
+
+        .acardion-info{
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #25225E;
+        }
+      }
+    }
+  }
+}
+
+.Maslahatlar{
+  margin-bottom: 140px;
+  h2{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    color: #38338C;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .card-body{
+    text-align: center;
+    img{
+      margin-bottom: 8px;
+    }
+
+    h3{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 140%;
+      text-align: center;
+      color: #38338C;
+    }
+
+    
+
+    p{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      text-align: center;
+      color: #38338C;
+    }
+  }
+}
+
+.ContactForm{
+  margin-bottom: 140px;
+  .contactform-body{
+    display: flex;
+    justify-content: end;
+    position: relative;
+
+    img{
+      z-index: 1;
+      max-width: 860px;
+      height: 480px;
+      object-fit: cover;
+    }
+
+    .contact-form{
+      max-width: 640px;
+      padding: 40px 24px;
+      background: #BEBBF7;
+      position: absolute;
+      top: 92px;
+      left: 0;
+      z-index: 2;
+
+      h3{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: #25225E;
+        margin-bottom: 24px;
+      }
+
+      input{
+        padding: 8px 12px;
+        gap: 10px;
+        height: 32px;
+        background: #DFDDFB;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #25225E;
+        border: none;
+      }
+
+      button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 24px;
+        gap: 16px;
+        width: 304px;
+        height: 40px;
+        background: #5D55EA;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+      }
+    }
+  }
+}
+
+.Footer{
+  background: #25225E;
+  padding: 40px 0;
+  .row{
+    h3{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+
+    a{
+      display: block;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-bottom: 11px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      /* or 25px */
+      
+      letter-spacing: 0.02em;
+      
+      color: #FFFFFF;
+    }
+  }
+}
