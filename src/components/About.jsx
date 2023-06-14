@@ -5,7 +5,7 @@ import img2 from '../images/about2.jpg'
 
 export default function About() {
   return (
-    <section className='About'>
+    <section className='About' id='about'>
       <div className="container">
         <div className="row body1">
           <div className="col-md-6">

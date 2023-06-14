@@ -21,7 +21,7 @@ export default function Home() {
       <WeInNumbers/>
       <Faq/>
       <Comments/>
-      <Maslahatlar/>
+      {/* <Maslahatlar/> */}
       <ContactForm/>
 
     </div>

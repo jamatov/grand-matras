@@ -14,14 +14,18 @@ import Home from './pages/Home';
 import OrtopedikMatras from './pages/OrtopedikMatras';
 import AnatomicMatras from './pages/AnatomicMatras';
 import BezpurjinnieMatras from './pages/BezpurjinnieMatras';
-
+import ScrollToTop from './components/ScrollToTop'
+import About from './pages/About';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/biz_haqimizda' element={<About/>}/>
+
         <Route path='/ortopedik_matraslar' element={<OrtopedikMatras/>}/>
         <Route path='/anatomik_matraslar' element={<AnatomicMatras/>}/>
         <Route path='/purjinasiz_matraslar' element={<BezpurjinnieMatras/>}/>

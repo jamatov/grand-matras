@@ -13,6 +13,7 @@ import { Pagination } from "swiper";
 import img1 from '../images/comment1.svg'
 import img2 from '../images/comment2.jpg'
 import img3 from '../images/comment3.jpg'
+import img4 from '../images/woman.jpg'
 
 
 import star from '../images/icons/star.svg'
@@ -45,7 +46,9 @@ export default function Comments() {
           modules={[Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide>
+         
+
+          <SwiperSlide className="slide-block">
             <div className="card">
               <div className="card-body">
                 <div className="d-flex">
@@ -70,32 +73,7 @@ export default function Comments() {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide>
-            <div className="card">
-              <div className="card-body">
-                <div className="d-flex">
-                  <img src={img1} alt="" />
-
-                  <div>
-                    <p>Aziz</p>
-                    <div className="stars">
-                      <img src={star} alt="" />
-                      <img src={star} alt="" />
-                      <img src={star} alt="" />
-                      <img src={star} alt="" />
-                      <img src={star} alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <p className="comment-info">
-                  Men Grand Matrasdan ikkita matras sotib oldim. Biri o'zim uchun, biri mehmon xonasi uchun. Ikkala matras ham o'z vaqtida yetkazib berildi va juda yaxshi qadoqlangan.
-                </p>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
+          <SwiperSlide className="slide-block">
             <div className="card">
               <div className="card-body">
                 <div className="d-flex">
@@ -120,7 +98,7 @@ export default function Comments() {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide>
+          <SwiperSlide className="slide-block">
             <div className="card">
               <div className="card-body">
                 <div className="d-flex">
@@ -140,6 +118,31 @@ export default function Comments() {
 
                 <p className="comment-info">
                   Ushbu matras bilan bo'lgan tajribam juda ijobiy bo'ldi. U ideal qattiqlikka ega va har qanday vazn va balandlikdagi odamlar uchun javob beradi. Bundan tashqari, bu haqiqatan ham qulay va to'liq va sog'lom uyquga yordam beradi.
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="slide-block">
+            <div className="card">
+              <div className="card-body">
+                <div className="d-flex">
+                  <img className="person-image" src={img4} alt="" />
+
+                  <div>
+                    <p>Laylo</p>
+                    <div className="stars">
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <p className="comment-info">
+                Men ushbu ishlab chiqaruvchidan matras sotib oldim va uning sifati bilan juda mamnunman. Bu nafaqat qulay va qulay, balki og'ir kundan keyin tiklanishimga yordam beradi. Men ushbu matrasni qulay va sifatli matras qidirayotgan har bir kishiga tavsiya qilaman.
                 </p>
               </div>
             </div>

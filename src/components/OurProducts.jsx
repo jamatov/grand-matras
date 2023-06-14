@@ -16,7 +16,7 @@ export default function OurProducts() {
         <h2 className='pruducts-tittle'>Bizning mahsulotlarimiz</h2>
         
         <div className="row">
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="card">
               <div className="card-body">
                 <img src={ortopedik} alt="" />
@@ -32,7 +32,7 @@ export default function OurProducts() {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="card">
               <div className="card-body">
                 <img src={anatomik} alt="" />
@@ -48,7 +48,7 @@ export default function OurProducts() {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="card">
               <div className="card-body">
                 <img src={besprujina} alt="" />
