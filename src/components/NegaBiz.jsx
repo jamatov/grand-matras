@@ -13,7 +13,7 @@ export default function NegaBiz() {
         <h2>Nega biz?</h2>
         <div className="row">
 
-         <div className="col-md-4">
+         <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy3} alt="" />
               <h3>Demokratik narxlar</h3>
@@ -21,7 +21,7 @@ export default function NegaBiz() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy5} alt="" />
               <h3>Xavfsizlik</h3>
@@ -29,7 +29,7 @@ export default function NegaBiz() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy6} alt="" />
               <h3>Pul qiymati</h3>
@@ -37,7 +37,7 @@ export default function NegaBiz() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy1} alt="" />
               <h3>Bepul o'lchash</h3>
@@ -45,7 +45,7 @@ export default function NegaBiz() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy4} alt="" />
               <h3> Bepul yetkazib berish</h3>
@@ -53,7 +53,7 @@ export default function NegaBiz() {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy2} alt="" />
               <h3>Tez ishlab chiqarish</h3>

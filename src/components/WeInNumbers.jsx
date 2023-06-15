@@ -7,7 +7,7 @@ export default function WeInNumbers() {
         <h2>Jamoamiz yutuqlari</h2>
         <div className="numbers-body">
           <div>
-            <h3>8 yil</h3>
+            <h3>9 yil</h3>
             <p>Mahalliy bozordagi tajribamiz</p>
           </div>
 

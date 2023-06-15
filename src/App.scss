@@ -25,15 +25,25 @@ a{
   text-decoration: none !important;
 }
 
+.navbarActive{
+  width: 100%;
+  position: fixed;
+  padding: 12px 0 !important;
+  backdrop-filter: saturate(180%) blur(3px) !important;
+  background: hsla(0,0%,100%,.8) !important;  
+  z-index: 9;
+  transition: 0.4s ease-in;
+}
 
 .Navbar{
   width: 100%;
   position: fixed;
-  padding: 12px 0;
+  padding: 15px 0;
   backdrop-filter: saturate(180%) blur(3px) !important;
-  background: hsla(0,0%,100%,.8) !important;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #DFDDFB;
   z-index: 9;
+  transition: 0.4s ease-in;
+
   .nav-body{
     display: flex;
     justify-content: space-between;
@@ -151,7 +161,7 @@ a{
 .About{
   padding-top: 100px;
   background: #fff;
-  
+
   .body1{
     margin-bottom: 100px;
 
@@ -403,6 +413,7 @@ a{
   margin-bottom: 150px;
 
   h2{
+    // font-family: "Roboto";
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
@@ -413,11 +424,15 @@ a{
 
   .numbers-body{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
 
     div{
+      text-align: center;
       h3{
+        font-family: "Roboto";
+
         font-weight: 700;
         font-size: 80px;
         line-height: 94px;
@@ -426,6 +441,8 @@ a{
       }
 
       p{
+        font-family: "Roboto";
+
         font-weight: 700;
         font-size: 24px;
         line-height: 140%;
@@ -541,7 +558,7 @@ a{
 
     img{
       z-index: 1;
-      max-width: 860px;
+      max-width: 860px !important;
       height: 480px;
       object-fit: cover;
     }
@@ -635,7 +652,7 @@ a{
 }
 
 .MoreInfo{
-  padding-top: 100px;
+  padding-top: 120px;
   margin-bottom: 140px;
   h2{
     font-weight: 700;

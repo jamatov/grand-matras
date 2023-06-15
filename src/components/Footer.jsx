@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className='Footer'>
       <div className="container">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-6 col-lg-3 mb-4">
             <h3>Qo’ng’iroq qiling</h3>
             <a href="tel:+9989977755188">
               <img src={call} alt="" /> +9989 97 775 51 88
@@ -23,7 +23,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-md-6 col-lg-3 mb-4">
             <h3>Bizga yozing</h3>
 
             <a target='_blank' href="">
@@ -35,7 +35,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-md-6 col-lg-3 mb-4">
             <h3>Obuna bo’ling</h3>
 
             <a target='_blank' href="https://www.instagram.com/grand_matras1/">
@@ -47,7 +47,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="col-md-3">
+          <div className="col-md-6 col-lg-3 mb-4">
             <h3>Manzil</h3>
             <a target='_blank' href="https://maps.windows.com/?form=WNAMSH&collection=point.41.392623_69.24397_Point">
               <img src={location} alt="" /> Yoshlik street, Tashkent, Tashkent, Tashkent, Uzbekistan 

@@ -1,10 +1,21 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import logo from '../images/logo.svg'
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [active, setActive] = useState("nav-list");
   const [toggleIcon, setToggleIcon] = useState('nav__toggler');
+
+  const[navbar, setNavbar] = useState(false)
+
+  const changeNavbar = () => {
+    if (window.scrollY >= 50) {
+        setNavbar(true);
+    } else {
+        setNavbar(false)
+    }
+  }
+  window.addEventListener('scroll', changeNavbar);
 
   const navToggle = () => {
     active === "nav-list"
@@ -15,17 +26,20 @@ export default function Navbar() {
       ? setToggleIcon("nav__toggler toggle")
       : setToggleIcon("nav__toggler");
   };
-  
+
+  useEffect(() => {
+  }, [])
+
   return (
-    <nav className='Navbar'>
+    <nav className={`Navbar ${navbar ? 'navbarActive' : ''}`}>
       <div className="container">
         <div className="nav-body">
           <Link to='/' ><img src={logo} alt="logo" /></Link>
 
           <ul className={active}>
-            <li><Link to='/' >Asosiy</Link></li>
-            <li><Link to='/biz_haqimizda'>Biz haqimizda</Link></li>
-            <li><Link to='/mahsulotlar'>Mahsulotlar</Link></li>
+            <li><Link onClick={navToggle} to='/' >Asosiy</Link></li>
+            <li><Link onClick={navToggle} to='/biz_haqimizda'>Biz haqimizda</Link></li>
+            <li><Link onClick={navToggle} to='/mahsulotlar'>Mahsulotlar</Link></li>
             {/* <li><a href="">Aloqa</a></li> */}
           </ul>
 
