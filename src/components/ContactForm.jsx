@@ -3,7 +3,7 @@ import img from '../images/contactform.jpg'
 
 export default function ContactForm() {
   return (
-    <section className='ContactForm'>
+    <section className='ContactForm' id='buyurtma'>
       <div className="container">
         <div className="contactform-body">
           <form className='contact-form row' action="">

@@ -37,9 +37,9 @@ export default function Navbar() {
           <Link to='/' ><img src={logo} alt="logo" /></Link>
 
           <ul className={active}>
-            <li><Link onClick={navToggle} to='/' >Asosiy</Link></li>
-            <li><Link onClick={navToggle} to='/biz_haqimizda'>Biz haqimizda</Link></li>
-            <li><Link onClick={navToggle} to='/mahsulotlar'>Mahsulotlar</Link></li>
+            <li><Link activeClass="active" onClick={navToggle} to='/' >Asosiy</Link></li>
+            <li><Link activeClass="active" onClick={navToggle} to='/biz_haqimizda'>Biz haqimizda</Link></li>
+            <li><Link activeClass="active" onClick={navToggle} to='/mahsulotlar'>Mahsulotlar</Link></li>
             {/* <li><a href="">Aloqa</a></li> */}
           </ul>
 

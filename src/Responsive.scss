@@ -1,19 +1,15 @@
 @media (max-width : 576px) {
   .NegaBiz{
-    h2{
-    }
-  
+   
     .card-body{
   
-      img{
-      }
+    
   
       h3{
         font-family: 'Roboto';
       }
   
-      p{
-      }
+      
     }
   }
   
@@ -542,8 +538,7 @@
 
         transform: translateX(100%);
         transition: 0.5s ease-in;
-        a{
-        }
+        
       }
 
       .nav__active{
@@ -553,8 +548,7 @@
       .nav__toggler{
         display: block;
         z-index: 9;
-        div{
-        }
+      
       }
 
       .toggle{
@@ -575,38 +569,18 @@
     .column-reverse{
       flex-direction: column-reverse;
     }
-    .body1{
-  
-    }
-    .row{
-      img{
-      }
-  
-      .body-info{
-        h3{
-        }
-  
-        p{
-        }
-      }
-    }
   }
 
   .NegaBiz{
-    h2{
-    }
+   
   
     .card-body{
   
-      img{
-      }
-  
+     
       h3{
         font-family: 'Roboto';
       }
   
-      p{
-      }
     }
   }
   
@@ -621,14 +595,6 @@
       align-items: center;
     }
   
-    .header-img{
-  
-      .header-matras{
-      }
-  
-      .header-rectangle{
-      }
-    }
   
     .header-info{
       h2{
@@ -639,46 +605,20 @@
         font-size: 18px;
       }
   
-      button{
-      }
+   
     }
   
   }
 
-  .About{
-    
-    .body1{
-  
-    }
-    .row{
-      img{
-      }
-  
-      .body-info{
-        h3{
-        }
-  
-        p{
-        }
-      }
-    }
-  }
 
   .NegaBiz{
-    h2{
-    }
-  
+   
     .card-body{
-  
-      img{
-      }
   
       h3{
         font-family: 'Roboto';
       }
   
-      p{
-      }
     }
   }
 }

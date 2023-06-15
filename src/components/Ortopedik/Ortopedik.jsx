@@ -29,6 +29,9 @@ export default function Ortopedik() {
                   <p>350 000 </p>
                   <span>so'mdan /kv.m</span>
                 </div>
+                <a href="#buyurtma">
+                  <button>Buyurtma berish</button>
+                </a>
               </div>
             </div>
           </div>
@@ -51,6 +54,9 @@ export default function Ortopedik() {
                   <p>550 000 </p>
                   <span>so'mdan /kv.m</span>
                 </div>
+                <a href="#buyurtma">
+                  <button>Buyurtma berish</button>
+                </a>
               </div>
             </div>
           </div>
@@ -73,6 +79,9 @@ export default function Ortopedik() {
                   <p>750 000 </p>
                   <span>so'mdan /kv.m</span>
                 </div>
+                <a href="#buyurtma">
+                  <button>Buyurtma berish</button>
+                </a>
               </div>
             </div>
           </div>
