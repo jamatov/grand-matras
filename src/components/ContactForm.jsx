@@ -7,10 +7,10 @@ export default function ContactForm() {
       <div className="container">
         <div className="contactform-body">
           <form className='contact-form row' action="">
-            <h3>Qaysi modelni tanlashni bilmayapsizmi?</h3>
+            <h3>Buyurtma xaqida xabar qoldiring</h3>
             <input type="text" className='col-md-8 mb-3' placeholder='Ismingizni kiriting' />
             <input type="text" className='col-md-8 mb-4' placeholder='Telefon raqamingizni kiriting' />
-            <button>Hoziroq ma’lumotga ega bo‘ling</button>
+            <button>Jo'natish</button>
           </form>
 
           <img src={img} alt="" />

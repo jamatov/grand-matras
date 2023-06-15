@@ -27,8 +27,13 @@ a{
 
 
 .Navbar{
+  width: 100%;
+  position: fixed;
   padding: 12px 0;
-  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: saturate(180%) blur(3px) !important;
+  background: hsla(0,0%,100%,.8) !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 9;
   .nav-body{
     display: flex;
     justify-content: space-between;
@@ -46,39 +51,44 @@ a{
         color: #25225E;
       }
     }
+
+    .nav__toggler{
+      cursor: pointer;
+      display: none;
+      div{
+        height: 0.2rem;
+        width: 3rem;
+        margin: 0.4rem;
+        background: #13112F;
+        transition: 0.4s ease-in;
+      }
+    }
   }
 }
 
 .Header{
   background-size: cover;
-  
-  // z-index: 1;
   height: 581px;
   
-  
-
   .row{
     align-items: center;
   }
 
   .header-img{
     position: relative;
-    // overflow-x: visible;
     padding-top: 77px;
+
     .header-matras{
-      // position: absolute;
       top: 0;
-      // z-index: 2;
+      width: 120%;
     }
 
     .header-rectangle{
       position: absolute;
       top: 0;
-
       left: 110px;
       z-index: -1;
     }
-
   }
 
   .header-info{
@@ -131,9 +141,17 @@ a{
   }
 }
 
+.Products{
+  padding-top: 100px;
+}
+.Home{
+  padding-top: 100px;
+}
+
 .About{
-    padding-top: 150px;
+  padding-top: 100px;
   background: #fff;
+  
   .body1{
     margin-bottom: 100px;
 
@@ -353,6 +371,28 @@ a{
         color: #25225E;
       }
     }
+  }
+}
+
+.AaboutTitle{
+  padding-top: 100px;
+  margin-bottom: 140px;
+  h2{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    color: #4A44BB;
+  }
+
+  p{
+    margin: 0 auto;
+    max-width: 783px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+    color: #38338C;
   }
 }
 

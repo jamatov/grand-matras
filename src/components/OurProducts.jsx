@@ -36,7 +36,7 @@ export default function OurProducts() {
             <div className="card">
               <div className="card-body">
                 <img src={anatomik} alt="" />
-                <h3>Mahsulot nomi</h3>
+                <h3>Anatomik matraskar</h3>
                   <div className='d-flex'>
                     <p className='skidka'>400 000 </p><span>so'mdan /kv.m</span>
                   </div>
@@ -52,7 +52,7 @@ export default function OurProducts() {
             <div className="card">
               <div className="card-body">
                 <img src={besprujina} alt="" />
-                <h3>Mahsulot nomi</h3>
+                <h3>Purjinasiz matraslar</h3>
                   <div className='d-flex'>
                     <p className='skidka'>400 000 </p><span>so'mdan /kv.m</span>
                   </div>

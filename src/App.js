@@ -1,4 +1,5 @@
 import './App.scss';
+import './Responsive.scss'
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 // import OurProducts from './components/OurProducts';
@@ -16,6 +17,7 @@ import AnatomicMatras from './pages/AnatomicMatras';
 import BezpurjinnieMatras from './pages/BezpurjinnieMatras';
 import ScrollToTop from './components/ScrollToTop'
 import About from './pages/About';
+import Products from './pages/Products';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/biz_haqimizda' element={<About/>}/>
+        <Route path='/mahsulotlar' element={<Products/>}/>
+
 
         <Route path='/ortopedik_matraslar' element={<OrtopedikMatras/>}/>
         <Route path='/anatomik_matraslar' element={<AnatomicMatras/>}/>
