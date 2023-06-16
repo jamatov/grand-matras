@@ -1,15 +1,13 @@
 import './App.scss';
 import './Responsive.scss'
 import { Route, Routes } from 'react-router-dom';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import i18next from "i18next";
 import Navbar from './components/Navbar';
-// import OurProducts from './components/OurProducts';
-// import About from './components/About';
-// import Header from './components/Header';
-// import HeaderIcons from './components/HeaderIcons';
-// import WeInNumbers from './components/WeInNumbers';
-// import Faq from './components/Faq';
-// import Maslahatlar from './components/Maslahatlar';
-// import ContactForm from './components/ContactForm';
+import { useLocation } from 'react-router-dom';
+import TranslationRU from './locale/Ru';
+import TranslationUZ from './locale/Uz';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import OrtopedikMatras from './pages/OrtopedikMatras';
@@ -20,10 +18,23 @@ import About from './pages/About';
 import Products from './pages/Products';
 import Pt from './components/Pt';
 
+i18n.use(initReactI18next).init({
+  resources: {
+    uz: { translation: TranslationUZ },
+    ru: { translation: TranslationRU },
+  },
+  lng: "uz",
+  fallbackLng: "uz",
+});
+
 function App() {
+  const { pathname } = useLocation();
+  const changeLang = (value) => {
+    i18next.changeLanguage(value);
+  };
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar changeLang={changeLang}/>
       <Pt/>
       <ScrollToTop/>
       <Routes>

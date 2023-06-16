@@ -11,6 +11,16 @@ $card-bg : #E6E8E9;
   box-sizing: border-box;
   // font-family: 'Roboto', sans-serif;
   font-family: 'Raleway', sans-serif;
+
+  button{
+    border-radius: 10px !important;
+    transition: 0.3s ease-in !important;
+    &:hover{
+      background: none !important;
+      color: #5D55EA !important;
+      border: 2px solid #5D55EA !important;
+    }
+  }
 }
 
 ul{
@@ -36,6 +46,7 @@ a{
   background: hsla(0,0%,100%,.8) !important;  
   z-index: 9;
   transition: 0.4s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .Navbar{
@@ -62,10 +73,36 @@ a{
         line-height: 21px;
         text-align: center;
         color: #25225E;
+
       }
 
-      .active{
-        color: greenyellow !important;
+      li{
+        transition: 0.3s ease-in;
+        &:hover{
+          transform: scale(1.08);
+
+          a{
+            transition: 0.3s ease-in;
+
+            color: #5D55EA;
+          }
+        }
+      }
+
+
+      select{
+        border: none;
+        background: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        
+        /* brend color/800 */
+        
+        color: #25225E;
       }
     }
 
@@ -76,7 +113,7 @@ a{
         height: 0.2rem;
         width: 3rem;
         margin: 0.4rem;
-        background: #13112F;
+        background: #4A44BB;
         transition: 0.4s ease-in;
       }
     }
@@ -97,7 +134,7 @@ a{
 
     .header-matras{
       top: 0;
-      width: 120%;
+      width: 130%;
     }
 
     .header-rectangle{
@@ -132,7 +169,6 @@ a{
       align-items: center;
       padding: 10px 24px;
       gap: 16px;
-      width: 243px;
       height: 40px;
       background: #5D55EA;
       font-weight: 700;
@@ -141,19 +177,40 @@ a{
       text-align: center;
       color: #FFFFFF;
       border: none;
+      border-radius: 10px;
+      transition: 0.3s ease-in;
+
+      &:hover{
+        background: none;
+        color: #5D55EA;
+        border: 2px solid #5D55EA;
+      }
     }
   }
 
 }
 
 .HeaderIcons{
-  padding: 24px 0;
+  padding:  0;
   background: #DFDDFB;
 
   .row{
     div{
-      padding: 40px 0;
+      padding: 20px 0;
       text-align: center;
+
+      p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        
+        /* brend color/700 */
+        
+        color: #38338C;
+      }
     }
   }
 }
@@ -432,7 +489,7 @@ a{
   .numbers-body{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
 
     div{

@@ -18,20 +18,7 @@ export default function Faq() {
           <div className="faq-acardion col-md-6">
             <h2>Tez-tez so'raladigan savollar</h2>
 
-            <Accordion className='faq-acardion__acardion mb-2'>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon className='acardion-icon'/>}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <Typography className='acardion-tittle'> Matraslaringizda qayerda yotib ko'rsa bo'ladi ? </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography className='acardion-info'>
-                  "Grand Matras" matraslarida Toshkent sh, Yunusobod tumani, Katta Xasanboy
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
+         
 
             <Accordion className='faq-acardion__acardion mb-2'>
               <AccordionSummary

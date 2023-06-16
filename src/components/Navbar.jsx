@@ -1,12 +1,19 @@
 import React, {useState, useEffect} from 'react'
 import logo from '../images/logo.svg'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 
-export default function Navbar() {
+export default function Navbar({changeLang}) {
   const [active, setActive] = useState("nav-list");
   const [toggleIcon, setToggleIcon] = useState('nav__toggler');
 
   const[navbar, setNavbar] = useState(false)
+
+  const { t } = useTranslation();
+  const changeLanguage = (e)=>{
+    changeLang(e.target.value)
+    localStorage.setItem("LANGUAGE", e.target.value)
+  }
 
   const changeNavbar = () => {
     if (window.scrollY >= 50) {
@@ -37,10 +44,14 @@ export default function Navbar() {
           <Link to='/' ><img src={logo} alt="logo" /></Link>
 
           <ul className={active}>
-            <li><Link activeClass="active" onClick={navToggle} to='/' >Asosiy</Link></li>
-            <li><Link activeClass="active" onClick={navToggle} to='/biz_haqimizda'>Biz haqimizda</Link></li>
-            <li><Link activeClass="active" onClick={navToggle} to='/mahsulotlar'>Mahsulotlar</Link></li>
+            <li><Link onClick={navToggle} to='/' >{t("asosiy")}</Link></li>
+            <li><Link onClick={navToggle} to='/biz_haqimizda'>{t("about")}</Link></li>
+            <li><Link onClick={navToggle} to='/mahsulotlar'>{t("products")}</Link></li>
             {/* <li><a href="">Aloqa</a></li> */}
+            <select className="language" name="languages" id="languages" onChange={changeLanguage}>
+              <option value="uz">O’zbekcha</option>
+              <option value="ru">Русский</option>
+            </select>
           </ul>
 
           <div onClick={navToggle} className={toggleIcon}>
