@@ -12,7 +12,9 @@ export default function Header() {
             <div className="header-info">
               <h2>GRAND MATRAS</h2>
               <p>Matraslar yaxshi tungi uyqu uchun zarur bo'lib, ular har xil turdagi, o'lchamlar va materiallarda mavjud bo'lib, ular shaxsiy imtiyozlar va ehtiyojlarga mos keladi.</p>
-              <button>Bepul kansulatsiya</button>
+              <a href="https://t.me/Davron19820" target='_blank'>
+                <button>Bepul kansulatsiya</button>
+              </a>
             </div>
           </div>
 

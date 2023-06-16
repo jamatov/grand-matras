@@ -18,8 +18,8 @@ export default function Footer() {
             <a href="tel:+9989977755188">
               <img src={call} alt="" /> +9989 97 775 51 88
             </a>
-            <a href="tel:+9989977755188">
-              <img src={call} alt="" /> +9989 97 775 51 88
+            <a href="tel:+9989971805188">
+              <img src={call} alt="" /> +9989 97 180 51 88
             </a>
           </div>
 

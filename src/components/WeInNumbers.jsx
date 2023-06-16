@@ -7,7 +7,7 @@ export default function WeInNumbers() {
         <h2>Jamoamiz yutuqlari</h2>
         <div className="numbers-body">
           <div>
-            <h3>9 yil</h3>
+            <h3>7 yil</h3>
             <p>Mahalliy bozordagi tajribamiz</p>
           </div>
 
@@ -17,7 +17,7 @@ export default function WeInNumbers() {
           </div>
 
           <div>
-            <h3>24 ta</h3>
+            <h3>14 ta</h3>
             <p>Hodimlar soni</p>
           </div>
         </div>

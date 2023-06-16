@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Pt() {
   return (
-    <div>Pt</div>
+    <div className='Pt'></div>
   )
 }

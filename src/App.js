@@ -18,11 +18,13 @@ import BezpurjinnieMatras from './pages/BezpurjinnieMatras';
 import ScrollToTop from './components/ScrollToTop'
 import About from './pages/About';
 import Products from './pages/Products';
+import Pt from './components/Pt';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      <Pt/>
       <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home/>}/>
