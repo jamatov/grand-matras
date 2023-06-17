@@ -53,6 +53,7 @@ const TranslationUZ = {
   faqTittle4 : "Matrasning asosiy vazifasi",
   faqTittle4info : "Matrasning asosiy vazifasi dam olish vaqtida tananing to'g'ri holatini ta'minlashdir. Natijada, uyqu sifati sezilarli darajada yaxshilanadi, boshqacha aytganda, matrasning asosiy vazifasi qulay uyquni ta'minlashdir. Qulay uyqu bizga kamroq vaqt ichida yetarlicha uxlash imkonini beradi.",
 
+  commentTittle : "Mijozlarimizning fikrlari",
 
 
 

@@ -29,7 +29,7 @@ export default function NegaBiz() {
             <div className="card-body">
               <img src={vhy5} alt="" />
               <h3>{t("why2tittle")}</h3>
-              <p>{t("why1info")}</p>
+              <p>{t("why2info")}</p>
 
 
             </div>
@@ -39,7 +39,7 @@ export default function NegaBiz() {
             <div className="card-body">
               <img src={vhy6} alt="" />
               <h3>{t("why3tittle")}</h3>
-              <p>{t("why1info")}</p>
+              <p>{t("why3info")}</p>
 
 
             </div>
@@ -49,7 +49,7 @@ export default function NegaBiz() {
             <div className="card-body">
               <img src={vhy1} alt="" />
               <h3>{t("why4tittle")}</h3>
-              <p>{t("why1info")}</p>
+              <p>{t("why4info")}</p>
 
 
             </div>
@@ -59,7 +59,7 @@ export default function NegaBiz() {
             <div className="card-body">
               <img src={vhy4} alt="" />
               <h3>{t("why5tittle")}</h3>
-              <p>{t("why1info")}</p>
+              <p>{t("why5info")}</p>
 
 
             </div>
@@ -69,7 +69,7 @@ export default function NegaBiz() {
             <div className="card-body">
               <img src={vhy2} alt="" />
               <h3>{t("why6tittle")}</h3>
-              <p>{t("why1info")}</p>
+              <p>{t("why6info")}</p>
 
 
             </div>

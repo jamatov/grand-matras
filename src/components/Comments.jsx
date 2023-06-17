@@ -17,12 +17,15 @@ import img4 from '../images/woman.jpg'
 
 
 import star from '../images/icons/star.svg'
+import { useTranslation } from "react-i18next";
 
 export default function Comments() {
+  const { t } = useTranslation();
+
   return (
     <section className="Comments">
       <div className="container">
-        <h2>Mijozlarimizning fikrlari</h2>
+        <h2>{t("commentTittle")}</h2>
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
