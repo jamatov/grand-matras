@@ -1,7 +1,5 @@
 import React from 'react'
-import card1 from '../images/card1.png'
-import card2 from '../images/card2.png'
-import card3 from '../images/card3.png'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import ortopedik from '../images/ortopedik.jpg'
 import anatomik from '../images/anatomik.jpg'
@@ -10,10 +8,12 @@ import besprujina from '../images/besprujina.jpg'
 
 
 export default function OurProducts() {
+  const { t } = useTranslation();
+
   return (
     <section className='OurProducts'>
       <div className="container">
-        <h2 className='pruducts-tittle'>Bizning mahsulotlarimiz</h2>
+        <h2 className='pruducts-tittle'>{t("ourProducts")}</h2>
         
         <div className="row">
           <div className="col-12 col-md-6 col-lg-4">

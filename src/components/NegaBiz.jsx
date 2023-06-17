@@ -5,59 +5,73 @@ import vhy3 from '../images/icons/vhy3.svg'
 import vhy4 from '../images/icons/vhy4.svg'
 import vhy5 from '../images/icons/vhy5.svg'
 import vhy6 from '../images/icons/vhy6.svg'
+import { useTranslation } from 'react-i18next'
+
 
 export default function NegaBiz() {
+  const { t } = useTranslation();
+
   return (
     <section className='NegaBiz'>
       <div className="container">
-        <h2>Nega biz?</h2>
+        <h2>{t("whyTittle")}</h2>
         <div className="row">
 
          <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy3} alt="" />
-              <h3>Demokratik narxlar</h3>
-              <p>Ishlab chiqarishga joriy etilgan ko'plab texnologiyalar xarajatlarni kamaytirish imkonini beradi, bundan tashqari, mahsulotimizni o'zimiz ishlab chiqaramiz, bu esa narxlarga ta'sir qiladi.</p>
+              <h3>{t("why1tittle")}</h3>
+              <p>{t("why1info")}</p>
             </div>
           </div>
 
           <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy5} alt="" />
-              <h3>Xavfsizlik</h3>
-              <p>Biz matraslarimiz uchun materiallar va plomba moddalarini diqqat bilan tanlaymiz, shuningdek, faqat tasdiqlangan komponentlar yetkazib beruvchilari bilan hamkorlik qilamiz.</p>
+              <h3>{t("why2tittle")}</h3>
+              <p>{t("why1info")}</p>
+
+
             </div>
           </div>
 
           <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy6} alt="" />
-              <h3>Pul qiymati</h3>
-              <p>Biz pul uchun eng yaxshi qiymati kafolat, chunki biz zanjirdan vositachilarni hisobga olmaganda, o'z narx siyosatimizni shakllantiramiz.</p>
+              <h3>{t("why3tittle")}</h3>
+              <p>{t("why1info")}</p>
+
+
             </div>
           </div>
 
           <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy1} alt="" />
-              <h3>Bepul o'lchash</h3>
-              <p>Mutaxassisimiz siz uchun qulay vaqtda to'shak uchun bepul jo'natish va o'lchashni amalga oshiradi.</p>
+              <h3>{t("why4tittle")}</h3>
+              <p>{t("why1info")}</p>
+
+
             </div>
           </div>
 
           <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy4} alt="" />
-              <h3> Bepul yetkazib berish</h3>
-              <p>Toshkent shahri ichida yetkazib berish bepul. Biz barcha transport xarajatlarini o'z zimmamizga olamiz.</p>
+              <h3>{t("why5tittle")}</h3>
+              <p>{t("why1info")}</p>
+
+
             </div>
           </div>
 
           <div className="col-6 col-md-4">
             <div className="card-body">
               <img src={vhy2} alt="" />
-              <h3>Tez ishlab chiqarish</h3>
-              <p>2 kun ichida buyurtma qilingan matrasni ishlab chiqaramiz.</p>
+              <h3>{t("why6tittle")}</h3>
+              <p>{t("why1info")}</p>
+
+
             </div>
           </div>
 

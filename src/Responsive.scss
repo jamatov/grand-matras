@@ -544,7 +544,13 @@
       }
 
       .nav__active{
+        padding: 0 !important;
+
         transform: translateX(0);
+
+        select{
+          display: inline-block !important;
+        }
       }
   
       .nav__toggler{

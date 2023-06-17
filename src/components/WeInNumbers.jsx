@@ -1,24 +1,27 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 export default function WeInNumbers() {
+  const { t } = useTranslation();
+
   return (
     <main className='WeInNumbers'>
       <div className="container">
-        <h2>Jamoamiz yutuqlari</h2>
+        <h2>{t("numbersTittle")}</h2>
         <div className="numbers-body">
           <div>
-            <h3>7 yil</h3>
-            <p>Mahalliy bozordagi tajribamiz</p>
+            <h3>{t("numbersTittle1")}</h3>
+            <p>{t("numbersTittle1info")}</p>
           </div>
 
           <div>
-            <h3>10 yil</h3>
-            <p>gacha ishonchli kafolat</p>
+            <h3>{t("numbersTittle2")}</h3>
+            <p>{t("numbersTittle2info")}</p>
           </div>
 
           <div>
-            <h3>14 ta</h3>
-            <p>Hodimlar soni</p>
+            <h3>{t("numbersTittle3")}</h3>
+            <p>{t("numbersTittle3info")}</p>
           </div>
         </div>
       </div>
